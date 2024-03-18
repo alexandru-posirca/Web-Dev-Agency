@@ -1,1 +1,8 @@
 @import "../css/common.css";
+@import "../css/module-top.css";
+@import "../css/module-cmn.css";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+}

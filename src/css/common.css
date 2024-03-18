@@ -1,3 +1,18 @@
-h1 {
-    color: red;
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-black-main text-white-main flex flex-col min-h-[100vh] font-montserrat;
+  .content {
+    @apply px-6;
+  }
+}
+
+@screen xl-media {
+  body {
+    .content {
+      @apply mx-auto max-w-[1200px];
+    }
+  }
 }

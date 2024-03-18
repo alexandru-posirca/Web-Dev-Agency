@@ -1,0 +1,9 @@
+.module-top {
+  div {
+    h2 {
+      p {
+        @apply text-[12px] md:text-sm block mt-3 opacity-70;
+      }
+    }
+  }
+}

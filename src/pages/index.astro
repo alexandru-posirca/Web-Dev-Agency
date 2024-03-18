@@ -1,9 +1,29 @@
 ---
-import LayoutMain from '../layouts/LayoutMain.astro';
+import LayoutMain from "../layouts/LayoutMain.astro";
+import ModuleTop from "../components/ModuleTop.astro";
+import ModuleCMN from "../components/ModuleCMN.astro";
 ---
 
 <LayoutMain title="Web-Dev-Agency">
-	<main>
-		<h1>First commit</h1>
-	</main>
+  <div>
+    <div>
+      <a href="#"> Services </a>
+    </div>
+    <div class="title-main" id="title-main">
+      <ModuleTop title="Web Dev Agency">
+        <p>Discover Web Dev Agency</p>
+      </ModuleTop>
+    </div>
+    <div class="content-cmn-sec">
+      <ModuleCMN content="This is description for web dev agency">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
+          risus pretium quam vulputate dignissim suspendisse. Eget nullam non
+          nisi est sit amet facilisis. Quam elementum pulvinar etiam non quam.
+          Fames ac turpis egestas integer eget aliquet nibh praesent.
+        </p>
+      </ModuleCMN>
+    </div>
+  </div>
 </LayoutMain>
