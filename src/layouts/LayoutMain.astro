@@ -1,5 +1,6 @@
 ---
 import "/src/styles/styles.css";
+import Header from "../components/Header.astro";
 
 interface Props {
   title: string;
@@ -12,13 +13,14 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Web-Dev-Agency Description" />
+    <meta name="description" content="Build from scratch - NO DESIGN" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
+    <Header/>
     <main id="mainContent" class="content">
       <slot />
     </main>
