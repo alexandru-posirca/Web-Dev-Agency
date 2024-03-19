@@ -1,0 +1,14 @@
+@screen md-media {
+  header {
+    .nav-list {
+      ul {
+        li {
+          @apply mr-5;
+          &:last-child {
+            @apply mr-0;
+          }
+        }
+      }
+    }
+  }
+}

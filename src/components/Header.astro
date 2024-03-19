@@ -3,12 +3,13 @@
 ---
 
 <header class="fixed z-[1000] w-screen bg-gray-500" id="header">
-    <div class="flex items-center flex-wrap justify-between lg:justify-normal lg:flex-nowrap">
-        <div class="nav-content brand">
+    <div class="w-full flex justify-center items-center p-3">
+    <div class="max-w-[1000px] size-full flex justify-center items-center relative">
+        <div class="nav-content brand absolute left-0">
             <a href="/">LOGO</a>
         </div>
-        <div class="nav-content lg:justify-center lg:flex block flex-wrap">
-            <div class="hidden lg:flex items-center text-xs text-gray-200">
+        <div class="nav-content lg:justify-center lg:flex block flex-wrap flex-col">
+            <div class="hidden lg:flex items-center text-xs text-gray-200 justify-center">
                 <div class="flex gap-1">
                     <ul class="flex gap-1">
                         <li><a href="tel:0787426368"></a></li>
@@ -29,11 +30,8 @@
             </div>
             <div class="nav-bar flex items-center justify-between w-full lg:w-auto px-0">
                 <div class="nav-list">
-                    <div class="hamburger relative size-[60px] border-[3px] border-solid border-white-main rounded-full flex items-center justify-center z-[100] cursor-pointer">
-                        <div class="bar h-[2px] w-[30px] relative bg-white-main z-[-1]"></div>
-                    </div>
-                    <ul>
-                        <li><a href="/"></a></li>
+                    <ul class="flex">
+                        <li><a href="/">Home</a></li>
                         <li><a href="/services"></a>Services</li>
                         <li><a href="/projects"></a>Projects</li>
                         <li><a href="/about">About</a></li>
@@ -43,4 +41,5 @@
             </div>
         </div>
     </div>
+</div>
 </header>
