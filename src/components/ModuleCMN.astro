@@ -6,13 +6,13 @@ interface Props {
 const { content } = Astro.props;
 ---
 
-<div class="content-bottom-sec">
-  <hr />
-  <div class="text-content-sec">
+<div>
+  <hr class="opacity-40" />
+  <div class="my-6 max-w-[700px] md:my-8 text-center">
     <p>
       {content}
     </p>
     <slot />
   </div>
-  <hr />
+  <hr class="opacity-40" />
 </div>

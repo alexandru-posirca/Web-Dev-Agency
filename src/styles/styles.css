@@ -1,6 +1,7 @@
 @import "../css/common.css";
 @import "../css/module-top.css";
 @import "../css/module-cmn.css";
+@import "../css/elements.css";
 
 @font-face {
   font-family: "Montserrat";

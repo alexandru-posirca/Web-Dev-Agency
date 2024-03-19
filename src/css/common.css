@@ -3,9 +3,24 @@ html {
 }
 
 body {
-  @apply bg-black-main text-white-main flex flex-col min-h-[100vh] font-montserrat;
+  @apply font-montserrat bg-black-main text-white-main flex flex-col min-h-[100vh];
   .content {
     @apply px-6;
+  }
+  h2 {
+    @apply text-[40px] font-semibold;
+  }
+  h3 {
+    @apply text-xl font-medium;
+  }
+  h5 {
+    @apply font-medium;
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply uppercase;
   }
 }
 

@@ -8,9 +8,10 @@ const { title } = Astro.props;
 
 <div class="module-top flex flex-wrap items-center justify-center">
   <div class="flex text-center items-center relative flex-col">
-    <h2 class="block uppercase font-semibold relative w-fit">
+    <h2>
       {title}
       <slot />
+      <span class="absolute top-0 left-0 h-full w-0 bg-orange-200 animate-textrevealbox"></span>
     </h2>
   </div>
 </div>
