@@ -1,15 +1,18 @@
 ---
 import Nav from "../components/Nav.astro";
+import TitleColumn from "../components/TitleCMN.astro";
 ---
 
 <footer class="text-white-main bg-gray-500 w-full">
   <div class="flex flex-col content md:pt-8 pb-2">
     <div class="foot-content-top mb-8 md:mb-0">
       <div class="footer-column">
+        <TitleColumn title="Key Information"/>
         <Nav />
         <hr class="line-comm" />
       </div>
       <div class="footer-column">
+        <TitleColumn title="Schedule"/>
         <div class="flex items-center">
           <p>Logo clock</p>
           <div class="info-clock ml-3">
@@ -17,6 +20,7 @@ import Nav from "../components/Nav.astro";
           </div>
         </div>
         <hr class="line-comm" />
+        <TitleColumn title="Social media"/>
         <div
           class="social-media font-semibold flex flex-wrap mt-2 gap-2 scale-[0.9] mb-2"
         >
@@ -30,6 +34,7 @@ import Nav from "../components/Nav.astro";
         <hr class="line-comm" />
       </div>
       <div class="footer-column">
+        <TitleColumn title="Contact"/>
         <div class="list-contact">
           <ul>
             <li>
