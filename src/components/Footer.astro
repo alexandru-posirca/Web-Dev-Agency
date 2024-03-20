@@ -1,0 +1,64 @@
+---
+import Nav from "../components/Nav.astro";
+---
+
+<footer class="text-white-main bg-gray-500 w-full">
+  <div class="flex flex-col content md:pt-8 pb-2">
+    <div class="foot-content-top mb-8 md:mb-0">
+      <div class="footer-column">
+        <Nav />
+        <hr class="line-comm" />
+      </div>
+      <div class="footer-column">
+        <div class="flex items-center">
+          <p>Logo clock</p>
+          <div class="info-clock ml-3">
+            <p class="flex flex-wrap">Monday - Friday: <span class="ml-1 md:ml-2">09:00 - 17:00 AM</span></p>
+          </div>
+        </div>
+        <hr class="line-comm" />
+        <div
+          class="social-media font-semibold flex flex-wrap mt-2 gap-2 scale-[0.9] mb-2"
+        >
+          <a href="#facebook" target="_blank">
+            <p>Logo facebook</p>
+          </a>
+          <a href="#instagram" target="_blank">
+            <p>Logo instagram</p>
+          </a>
+        </div>
+        <hr class="line-comm" />
+      </div>
+      <div class="footer-column">
+        <div class="list-contact">
+          <ul>
+            <li>
+              <p>Logo phone</p>
+              <a href="tel:0755054654" target="_blank">0755054654</a>
+            </li>
+            <li>
+              <p>Logo location</p>
+              <a href="#location" target="_blank"> Location Agency </a>
+            </li>
+            <li>
+              <p>Logo email</p>
+              <a href="#email"> Email Agency </a>
+            </li>
+          </ul>
+        </div>
+        <hr class="line-comm" />
+      </div>
+    </div>
+    <div class="text-xs">
+      <div
+        class="copyright flex flex-wrap lg:flex-nowrap justify-center mt-3 lg-mt-0 opacity-[0.6]"
+      >
+        <p class="mr-2">
+          Copyright <span>&copy;</span> 2024 Web Dev Agency
+        </p>
+        <p>All rights reserved.</p>
+      </div>
+      <hr class="line-comm" />
+    </div>
+  </div>
+</footer>

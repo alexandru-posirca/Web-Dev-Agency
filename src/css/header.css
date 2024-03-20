@@ -2,6 +2,7 @@
   header {
     .nav-list {
       ul {
+        @apply flex uppercase;
         li {
           @apply mr-5;
           &:last-child {

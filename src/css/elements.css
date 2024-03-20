@@ -13,3 +13,9 @@
       }
     }
   }
+
+/* line */
+
+.line-comm {
+  @apply mt-2 opacity-50;
+}

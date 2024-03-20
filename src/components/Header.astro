@@ -1,5 +1,5 @@
 ---
-
+import Nav from "../components/Nav.astro";
 ---
 
 <header class="fixed z-[1000] w-screen bg-gray-500" id="header">
@@ -28,16 +28,8 @@
                 </div>
                 <hr class="block mt-5 h-[1px]">
             </div>
-            <div class="nav-bar flex items-center justify-between w-full lg:w-auto px-0">
-                <div class="nav-list">
-                    <ul class="flex">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/services"></a>Services</li>
-                        <li><a href="/projects"></a>Projects</li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="flex items-center justify-between w-full lg:w-auto px-0">
+                <Nav/>
             </div>
         </div>
     </div>
