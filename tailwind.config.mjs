@@ -47,10 +47,19 @@ export default {
             color: "#FAFAF9",
           },
         },
+        scroll: {
+          "0": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(calc(-100px * 10))",
+          }
+        }
       },
       animation: {
         textrevealbox: "text_reveal_box 1s ease",
         textrevealmain: "text_reveal_main 3s ease forwards",
+        scroll: "scroll 12s linear infinite"
       },
     },
   },

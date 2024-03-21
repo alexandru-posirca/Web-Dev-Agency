@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import projectItem from "../img/project-item.webp";
+---
+
+<div class="slider h-[300px] m-auto relative flex items-center overflow-hidden w-full">
+    <div class="slider-track flex w-[calc[250px * 7)] animate-scroll">
+        <div class="slide">
+            <a href="/projects">
+                <Image src={projectItem} alt="project-item" width="268" height="800" loading="eager"/>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/projects">
+                <Image src={projectItem} alt="project-item" width="268" height="800" loading="eager"/>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/projects">
+                <Image src={projectItem} alt="project-item" width="268" height="800" loading="eager"/>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/projects">
+                <Image src={projectItem} alt="project-item" width="268" height="800" loading="eager"/>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/projects">
+                <Image src={projectItem} alt="project-item" width="268" height="800" loading="eager"/>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/projects">
+                <Image src={projectItem} alt="project-item" width="268" height="800" loading="eager"/>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/projects">
+                <Image src={projectItem} alt="project-item" width="268" height="800" loading="eager"/>
+            </a>
+        </div>
+    </div>
+</div>

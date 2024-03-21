@@ -1,0 +1,29 @@
+.slider {
+  .slider-track {
+    .slide {
+      @apply min-w-fit flex items-center p-4 pt-[50px];
+      perspective: 100px;
+      a {
+        @apply w-full;
+        transition: transform 1s;
+        &:hover {
+          @apply cursor-pointer;
+          transform: translateZ(20px);
+        }
+      }
+      img {
+        @apply w-full;
+      }
+    }
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  &::before {
+    @apply left-0 top-0;
+  }
+  &::after {
+    @apply right-0 top-0;
+    transform: rotateZ(180deg);
+  }
+}
