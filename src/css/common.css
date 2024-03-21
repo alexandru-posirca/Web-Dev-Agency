@@ -7,6 +7,9 @@ body {
   .content {
     @apply px-6;
   }
+  #mainContent {
+    @apply m-auto py-[80px] px-6;
+  }
   h2 {
     @apply text-[40px] font-semibold;
   }
@@ -17,18 +20,40 @@ body {
   h3 {
     @apply uppercase;
   }
+  ul li {
+    @apply my-2 gap-2 flex items-center flex-wrap;
+  }
+}
+
+@screen md-media {
+  body {
+    .content {
+      h2 {
+        @apply text-[50px];
+      }
+      ul a {
+        @apply relative;
+        &:hover {
+          @apply text-orange-200 cursor-pointer relative transition-all;
+          &::before {
+            @apply w-full;
+          }
+        }
+        &::before {
+          @apply absolute content-[''] w-0 h-[1px] left-0 bottom-0 transition-all bg-orange-200 duration-700;
+        }
+      }
+    }
+    #mainContent {
+      @apply px-0;
+    }
+  }
 }
 
 @screen xl-media {
   body {
     .content {
       @apply mx-auto max-w-[1200px];
-      ul a {
-        @apply relative;
-        &:hover {
-          @apply text-orange-200 cursor-pointer relative;
-        }
-      }
     }
   }
 }

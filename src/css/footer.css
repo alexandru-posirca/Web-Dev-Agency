@@ -1,9 +1,6 @@
-.foot-content-top {
+.footer-content {
   .footer-column {
-    @apply mb-6;
-    ul li {
-      @apply my-1 gap-2 flex items-center flex-wrap;
-    }
+    @apply mb-8;
     .list-contact {
       ul li {
         @apply my-3;
@@ -13,7 +10,7 @@
 }
 
 @screen md-media {
-  .foot-content-top {
+  .footer-content {
     @apply flex flex-wrap justify-between;
     .footer-column {
       ul li {

@@ -1,15 +1,24 @@
 @screen md-media {
   header {
     .nav-list {
+      @apply mx-5 my-2;
       ul {
         @apply flex uppercase;
         li {
-          @apply mr-5;
+          @apply mr-5 my-0;
           &:last-child {
             @apply mr-0;
           }
         }
       }
+    }
+  }
+}
+
+@screen lg-media {
+  header {
+    .nav-list {
+      @apply mx-5 my-0;
     }
   }
 }
