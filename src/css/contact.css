@@ -1,0 +1,50 @@
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  img {
+    filter: hue-rotate(180deg) !important;
+  }
+}
+.text-content-sec {
+  @apply flex justify-between flex-col;
+  .contact-column {
+    @apply flex flex-col items-center text-center justify-between;
+    ul {
+      li {
+        @apply flex items-center justify-center;
+        /* a {
+          &:hover {
+            @apply transition-none;
+          }
+        } */
+        img {
+          @apply mr-1;
+        }
+      }
+    }
+  }
+}
+
+@screen md-media {
+  .text-content-sec {
+    @apply flex-row;
+    .contact-column {
+      /* @apply w-[14vw]; */
+      ul {
+        a {
+          @apply flex-none;
+        }
+      }
+    }
+  }
+}
+
+@screen lg-media {
+  .content-bottom-sec {
+    .contact-column {
+      /* @apply w-[20vw]; */
+    }
+  }
+}

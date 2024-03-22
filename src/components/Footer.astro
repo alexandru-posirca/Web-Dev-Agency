@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import phone from "../img/phone.svg";
 import location from "../img/location.svg";
 import linkedin from "../img/linkedin.svg";
+import email from "../img/email.svg";
 ---
 
 <footer class="text-white-main bg-gray-500 w-full mt-auto">
@@ -51,7 +52,8 @@ import linkedin from "../img/linkedin.svg";
               <a href="tel:0755054654" target="_blank">0755054654</a>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="#d1d2d6" fill-rule="evenodd" d="M14.95 3.684L8.637 8.912a1 1 0 0 1-1.276 0l-6.31-5.228A.999.999 0 0 0 1 4v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a.999.999 0 0 0-.05-.316M2 2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m-.21 1l5.576 4.603a1 1 0 0 0 1.27.003L14.268 3z"></path></svg>
+              <Image src={email} alt="email" width="32" height="32"
+              loading="eager"></Image>
               <a href="#email"> Email Agency </a>
             </li>
             <li>
