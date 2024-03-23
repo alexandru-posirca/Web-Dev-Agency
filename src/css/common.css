@@ -8,7 +8,7 @@ body {
     @apply px-6;
   }
   #mainContent {
-    @apply m-auto py-[80px];
+    @apply m-auto pb-[80px] pt-[120px];
   }
   h2 {
     @apply text-[40px] font-semibold;

@@ -8,7 +8,7 @@
       filter: hue-rotate(180deg) !important;
     }
   }
-  .content-top {
+  .content-cmn-bottom {
     @apply flex justify-between flex-col w-[81vw];
     .contact-column {
       @apply flex flex-col items-center text-center justify-start;
@@ -26,7 +26,7 @@
 
 @screen md-media {
   .contact-content {
-    .content-top {
+    .content-cmn-bottom {
       @apply flex-row justify-around;
     }
   }

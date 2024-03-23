@@ -1,0 +1,20 @@
+---
+import LayoutMain from "../layouts/LayoutMain.astro";
+import ModuleCMN from "../components/ModuleCMN.astro";
+import ModuleTop from "../components/ModuleTop.astro";
+import ProjectItem from "../components/ProjectItem.astro";
+---
+
+<LayoutMain title="Services | Web Dev">
+  <ModuleTop title="Services">
+    <p>Discover our development services</p>
+  </ModuleTop>
+  <div class="project-content max-w-[700px]">
+    <ModuleCMN content="">
+      <ProjectItem title={'Web Development'} description="Web development encompasses a wide range of services, which include delivering websites or web apps, eCommerce solutions or website architectures."/>
+      <ProjectItem title={'Software Development'} description="Custom software application development can help companies achieve their goals more efficiently, while also improving the overall quality of their products and services."/>
+      <ProjectItem title={'Mobile Development'} description="Mobile app development is the process of designing, creating, and deploying mobile applications that are uniquely tailored to meet the exact needs and objectives of a business, organization, or individual."/>
+      <ProjectItem title={'UI/UX Design'} description="We are passionate about creating effective and efficient human-computer interactions via universal design principles, and utilisation of best practices."/>
+    </ModuleCMN>
+  </div>
+</LayoutMain>

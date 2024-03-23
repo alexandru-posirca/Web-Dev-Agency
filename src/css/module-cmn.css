@@ -1,5 +1,5 @@
-.content-cmn-sec {
+.container-cmn-top {
   p {
-    @apply my-5;
+    @apply my-6;
   }
 }
