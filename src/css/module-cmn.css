@@ -1,5 +1,4 @@
 .content-cmn-sec {
-  @apply flex flex-col items-center;
   p {
     @apply my-5;
   }

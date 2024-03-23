@@ -8,7 +8,7 @@ body {
     @apply px-6;
   }
   #mainContent {
-    @apply m-auto py-[80px] px-6;
+    @apply m-auto py-[80px];
   }
   h2 {
     @apply text-[40px] font-semibold;
@@ -43,9 +43,6 @@ body {
           @apply absolute content-[''] w-0 h-[1px] left-0 bottom-0 transition-all bg-orange-200 duration-700;
         }
       }
-    }
-    #mainContent {
-      @apply px-0;
     }
   }
 }

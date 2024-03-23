@@ -2,15 +2,10 @@
 
 .title-main {
     .module-top {
-      @apply my-[22px];
-      h2 {
-        @apply animate-textrevealmain lg:text-[68px];
-        color: transparent;
-        animation-delay: 1s;
-        span {
-            animation-delay: 0.5s;
+        h2 {
+          @apply animate-textrevealmain lg:text-[68px] ;
+          animation-delay: 1s;
         }
-      }
     }
   }
 

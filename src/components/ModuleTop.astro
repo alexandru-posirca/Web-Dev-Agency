@@ -6,9 +6,9 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<div class="module-top flex flex-wrap items-center justify-center">
+<div class="module-top flex flex-wrap items-center justify-center mb-5">
   <div class="flex text-center items-center relative flex-col">
-    <h2>
+    <h2 class="animate-textreveal">
       {title}
       <slot />
       <span class="absolute top-0 left-0 h-full w-0 bg-orange-200 animate-textrevealbox"></span>

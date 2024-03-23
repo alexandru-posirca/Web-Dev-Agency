@@ -1,8 +1,10 @@
 .module-top {
   div {
     h2 {
+      color: transparent;
+      animation-delay: 1s;
       p {
-        @apply text-[12px] md:text-sm block mt-3 opacity-70;
+        @apply text-[12px] md:text-sm block mt-3 opacity-70 animate-textrevealmain;
       }
     }
   }
