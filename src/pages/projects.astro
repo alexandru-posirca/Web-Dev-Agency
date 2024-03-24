@@ -1,24 +1,26 @@
 ---
 import LayoutMain from "../layouts/LayoutMain.astro";
 import ModuleTop from "../components/ModuleTop.astro";
-import projectPicture from "../img/project-picture.webp";
+import projectPicture from "../img/project-1.webp";
+import projectPicture1 from "../img/project-2.webp";
 import { Image, getImage } from "astro:assets";
 const pictureOne = await getImage({src: projectPicture, alt: "picture-one"});
+const pictureTwo = await getImage({src: projectPicture1, alt: "picture-one"});
 ---
 
 <LayoutMain title="Projects | Web Dev">
     <ModuleTop title="Projects">
       <p>Discover our developed projects</p>
     </ModuleTop>
-    <div class="gallery-projects">
+    <div class="gallery-projects mt-[53px]">
       <div>
         <a href={pictureOne.src} class="fancybox" data-fancybox="gallery">
           <Image src={projectPicture} alt="project-picture" loading="eager"/>
         </a>
       </div>
       <div>
-        <a href={pictureOne.src} class="fancybox" data-fancybox="gallery">
-          <Image src={projectPicture} alt="project-picture"/>
+        <a href={pictureTwo.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture1} alt="project-picture"/>
         </a>
       </div>
       <div>

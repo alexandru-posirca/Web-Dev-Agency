@@ -1,18 +1,17 @@
 .slider {
   .slider-track {
     .slide {
-      @apply min-w-fit flex items-center p-4 pt-[50px];
+      @apply min-w-fit flex items-center p-[10px];
       perspective: 100px;
       a {
-        @apply w-full;
-        transition: transform 1s;
+        transition: transform 0.7s;
         &:hover {
           @apply cursor-pointer;
-          transform: translateZ(20px);
+          transform: translateZ(10px);
         }
-      }
-      img {
-        @apply w-full;
+        img {
+          @apply w-full h-[300px] object-cover;
+        }
       }
     }
     &:hover {

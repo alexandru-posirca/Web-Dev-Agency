@@ -1,5 +1,8 @@
 .container-cmn-top {
   p {
     @apply my-6;
+    &:last-child {
+      @apply mb-0;
+    }
   }
 }

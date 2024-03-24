@@ -5,16 +5,21 @@
 
 .fancybox-container {
   .fancybox-navigation {
-    .fancybox-button {
-      @apply bg-orange-200;
+    .fancybox-button--arrow_right,
+    .fancybox-button--arrow_left {
+      @apply hidden;
+
     }
+  }
+  .fancybox-infobar {
+    @apply ml-[14px];
   }
   .fancybox-thumbs {
     background: transparent;
     @apply mt-[10px];
     .fancybox-thumbs__list {
       a {
-        /* @apply h-[150px]; */
+        @apply h-[96px] w-[96px];
         &::before {
           @apply border-orange-200 border-[3px];
         }
@@ -22,8 +27,8 @@
     }
   }
     .fancybox-image {
-      @apply scale-90;
-  }
+      padding: 24px;
+    }
 }
 
 @screen md-media {
@@ -43,20 +48,45 @@
       }
     }
   }
+  .fancybox-container {
+    .fancybox-infobar {
+      @apply ml-[70px];
+    }
+    .fancybox-toolbar {
+      @apply mr-[36px];
+    }
+    .fancybox-thumbs {
+      @apply w-[250px];
+      .fancybox-thumbs__list {
+        a {
+          @apply h-[119px] w-[130px];
+        }
+      }
+    }
+    .fancybox-image {
+      @apply scale-[0.84];
+      padding: 0;
+    }
+  }
 }
 
 
 @screen lg-media {
   .fancybox-container {
     .fancybox-thumbs {
+      @apply w-[310px];
       .fancybox-thumbs__list {
         a {
-          /* @apply h-[200px] w-[150px]; */
+          @apply h-[140px] w-[140px];
         }
       }
     }
+      .fancybox-toolbar {
+        @apply mr-[100px];
+      }
       .fancybox-image {
-        @apply scale-100;
+        @apply scale-[0.83];
+        padding: 0;
       }
   }
 }

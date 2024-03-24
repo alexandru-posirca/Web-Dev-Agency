@@ -20,6 +20,11 @@
           }
         }
       }
+      .address {
+        .title-cmn {
+          @apply mt-0;
+        }
+      }
     }
   }
 }
