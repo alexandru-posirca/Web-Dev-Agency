@@ -7,7 +7,7 @@
         transition: transform 0.7s;
         &:hover {
           @apply cursor-pointer;
-          transform: translateZ(10px);
+          transform: translateZ(8px);
         }
         img {
           @apply w-full h-[300px] object-cover;

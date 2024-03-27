@@ -57,7 +57,7 @@ export default {
             transform: "translateX(0)",
           },
           "100%": {
-            transform: "translateX(calc(-100px * 10))",
+            transform: "translateX(calc(-200px * 10))",
           }
         }
       },
@@ -65,7 +65,7 @@ export default {
         textrevealbox: "text_reveal_box 1s ease",
         textreveal: "text_reveal 0.5s ease forwards",
         textrevealmain: "text_reveal_main 3s ease forwards",
-        // scroll: "scroll 12s linear infinite"
+        scroll: "scroll 25s linear infinite"
       },
     },
   },

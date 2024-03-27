@@ -3,9 +3,24 @@ import LayoutMain from "../layouts/LayoutMain.astro";
 import ModuleTop from "../components/ModuleTop.astro";
 import projectPicture from "../img/project-1.webp";
 import projectPicture1 from "../img/project-2.webp";
+import projectPicture2 from "../img/project-3.webp";
+import projectPicture3 from "../img/project-4.webp";
+import projectPicture4 from "../img/project-5.webp";
+import projectPicture5 from "../img/project-6.webp";
+import projectPicture6 from "../img/project-7.webp";
+import projectPicture7 from "../img/project-8.webp";
+import projectPicture8 from "../img/project-9.webp";
+
 import { Image, getImage } from "astro:assets";
 const pictureOne = await getImage({src: projectPicture, alt: "picture-one"});
-const pictureTwo = await getImage({src: projectPicture1, alt: "picture-one"});
+const pictureTwo = await getImage({src: projectPicture1, alt: "picture-two"});
+const pictureThree = await getImage({src: projectPicture2, alt: "picture-three"});
+const pictureFor = await getImage({src: projectPicture3, alt: "picture-for"});
+const pictureFive = await getImage({src: projectPicture4, alt: "picture-five"});
+const pictureSix = await getImage({src: projectPicture5, alt: "picture-six"});
+const pictureSeven = await getImage({src: projectPicture6, alt: "picture-seven"});
+const pictureEight = await getImage({src: projectPicture7, alt: "picture-eight"});
+const pictureNine = await getImage({src: projectPicture8, alt: "picture-nine"});
 ---
 
 <LayoutMain title="Projects | Web Dev">
@@ -19,23 +34,43 @@ const pictureTwo = await getImage({src: projectPicture1, alt: "picture-one"});
         </a>
       </div>
       <div>
+        <a href={pictureThree.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture2} alt="project-picture"/>
+        </a>
+      </div>
+      <div>
+        <a href={pictureFive.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture4} alt="project-picture"/>
+        </a>
+      </div>
+      <div>
         <a href={pictureTwo.src} class="fancybox" data-fancybox="gallery">
           <Image src={projectPicture1} alt="project-picture"/>
         </a>
       </div>
       <div>
-        <a href={pictureOne.src} class="fancybox" data-fancybox="gallery">
-          <Image src={projectPicture} alt="project-picture"/>
+        <a href={pictureFor.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture3} alt="project-picture"/>
         </a>
       </div>
       <div>
-        <a href={pictureOne.src} class="fancybox" data-fancybox="gallery">
-          <Image src={projectPicture} alt="project-picture"/>
+        <a href={pictureSeven.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture6} alt="project-picture"/>
         </a>
       </div>
       <div>
-        <a href={pictureOne.src} class="fancybox" data-fancybox="gallery">
-          <Image src={projectPicture} alt="project-picture"/>
+        <a href={pictureEight.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture7} alt="project-picture"/>
+        </a>
+      </div>
+      <div>
+        <a href={pictureSix.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture5} alt="project-picture"/>
+        </a>
+      </div>
+      <div>
+        <a href={pictureNine.src} class="fancybox" data-fancybox="gallery">
+          <Image src={projectPicture8} alt="project-picture"/>
         </a>
       </div>
     </div>
