@@ -1,6 +1,11 @@
 .gallery-projects {
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   @apply grid-flow-dense grid gap-5;
+  div {
+    img {
+      @apply max-h-[220px] object-cover h-full;
+    }
+  }
 }
 
 .fancybox-container {

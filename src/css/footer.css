@@ -13,8 +13,12 @@
   .footer-content {
     @apply flex flex-wrap justify-between;
     .footer-column {
+      @apply mr-6;
       ul li {
         @apply gap-3;
+      }
+      &:last-child {
+        @apply mr-0;
       }
     }
   }
