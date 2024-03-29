@@ -1,9 +1,34 @@
+header {
+  svg {
+    @apply cursor-pointer;
+  }
+  .nav-bottom {
+    ul li {
+      @apply my-6 justify-center;
+      &:last-child {
+        @apply mb-[76px];
+      }
+    }
+    &.active {
+      @apply h-auto;
+    }
+  }
+  #menu-icon.active {
+    .hamburger-icon {
+      display: none;
+    }
+    .close-icon {
+      display: block;
+    }
+  }
+}
+
 @screen md-media {
   header {
     .nav-list {
       @apply mx-5 my-2;
       ul {
-        @apply flex uppercase;
+        @apply flex;
         li {
           @apply mr-5 my-0;
           &:last-child {
