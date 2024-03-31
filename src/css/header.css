@@ -9,6 +9,9 @@ header {
         &:last-child {
           @apply mb-[64px];
         }
+        a:is(:link, :active, :visited).active {
+          @apply text-orange-200;
+        }
       }
     }
     &.active {

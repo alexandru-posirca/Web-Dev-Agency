@@ -1,5 +1,7 @@
 const menuIcon = document.getElementById("menu-icon");
 const navBottom = document.querySelector(".nav-bottom");
+const windowPath = window.location.pathname;
+const navLinks = document.querySelectorAll(".nav-list ul li a");
 
 menuIcon.addEventListener("click", () => {
   navBottom.classList.toggle("active");
@@ -12,3 +14,10 @@ document.addEventListener("click", (e) => {
     menuIcon.classList.remove("active");
   }
 });
+
+  navLinks.forEach((link) => {
+   const navLinkPath = new URL(link.href).pathname;
+   if((windowPath === navLinkPath) || (windowPath === "/" && navLinkPath === "/" )) {
+    link.classList.add('active');
+   }
+  })
