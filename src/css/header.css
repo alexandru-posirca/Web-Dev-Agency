@@ -3,10 +3,12 @@ header {
     @apply cursor-pointer;
   }
   .nav-bottom {
-    ul li {
-      @apply my-6 justify-center;
-      &:last-child {
-        @apply mb-[76px];
+    .nav-list {
+      ul li {
+        @apply mt-6 mb-0 justify-center text-2xl;
+        &:last-child {
+          @apply mb-[64px];
+        }
       }
     }
     &.active {
@@ -25,14 +27,15 @@ header {
 
 @screen md-media {
   header {
-    .nav-list {
-      @apply mx-5 my-2;
-      ul {
-        @apply flex;
-        li {
-          @apply mr-5 my-0;
-          &:last-child {
-            @apply mr-0;
+    .nav-bottom {
+      .nav-list {
+        ul {
+          @apply flex;
+          li {
+            @apply mr-5 my-0 text-base;
+            &:last-child {
+              @apply mr-0 mb-0;
+            }
           }
         }
       }
@@ -43,7 +46,7 @@ header {
 @screen lg-media {
   header {
     .nav-list {
-      @apply mx-5 my-0;
+      @apply mr-5 my-0;
     }
   }
 }

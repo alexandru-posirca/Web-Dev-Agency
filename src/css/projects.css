@@ -1,6 +1,6 @@
 .gallery-projects {
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  @apply grid-flow-dense grid gap-5;
+  @apply grid-flow-dense grid gap-8;
   div {
     img {
       @apply max-h-[220px] object-cover h-full;
@@ -39,6 +39,7 @@
 @screen md-media {
   .gallery-projects {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    @apply gap-5;
     @apply mx-auto max-w-[900px];
     div {
       @apply relative;
