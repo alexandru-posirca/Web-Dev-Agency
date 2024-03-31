@@ -17,7 +17,7 @@ document.addEventListener("click", (e) => {
 
   navLinks.forEach((link) => {
    const navLinkPath = new URL(link.href).pathname;
-   if((windowPath === navLinkPath) || (windowPath === "/" && navLinkPath === "/" )) {
+   if((windowPath === navLinkPath) || (windowPath.startsWith(navLinkPath) && navLinkPath !== "/" )) {
     link.classList.add('active');
    }
   })
