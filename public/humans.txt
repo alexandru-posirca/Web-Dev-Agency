@@ -1,17 +1,17 @@
-				/* TEAM */
+/* TEAM */
 
-				Developer: Ionuț Alexandru Poșircă
-				Site: https://alexandru-posirca-portfolio.pages.dev/
-				Github: https://github.com/alexandru-posirca
-				Linkedin: https://www.linkedin.com/in/ionut-alexandru-posirca/
-				Location: Bucharest, România
+Developer: Ionuț Alexandru Poșircă
+Site: https://alexandru-posirca-portfolio.pages.dev/
+Github: https://github.com/alexandru-posirca
+Linkedin: https://www.linkedin.com/in/ionut-alexandru-posirca/
+Location: Bucharest, România
 
-				/* SITE */
+/* SITE */
 
-				Last update: 2024/09/08
-				Language: English
-				Doctype: HTML5
-				Standards: HTML5, CSS3, ES6, Astro4
-				IDE: VSCode
-				Components: ESLint, MarkdownLint, Prettier
-				Software: web-dev-agency.pages.dev Website
+Last update: 2024/09/08
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, ES6, Astro4
+IDE: VSCode
+Components: ESLint, MarkdownLint, Prettier
+Software: web-dev-agency.pages.dev Website

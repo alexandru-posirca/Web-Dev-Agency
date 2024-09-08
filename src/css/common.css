@@ -21,7 +21,7 @@ body {
     @apply uppercase;
   }
   ul li {
-    @apply my-2 gap-2 flex items-center flex-wrap;
+    @apply my-2 gap-1 flex items-center flex-wrap;
   }
 }
 

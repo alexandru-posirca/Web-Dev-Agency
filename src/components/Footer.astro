@@ -2,8 +2,6 @@
 import Nav from "../components/Nav.astro";
 import TitleColumn from "../components/TitleCMN.astro";
 import { Image } from "astro:assets";
-import phone from "../img/phone.svg";
-import location from "../img/location.svg";
 import linkedin from "../img/linkedin.svg";
 import email from "../img/email.svg";
 ---
@@ -19,7 +17,7 @@ import email from "../img/email.svg";
       <div class="footer-column">
         <TitleColumn title="Schedule"/>
         <div class="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><g fill="#d1d2d6"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"></path></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" role="img" aria-label="Schedule"><title>Schedule</title><g fill="#d1d2d6"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"></path></g></svg>
           <div class="info-clock ml-3">
             <p class="flex flex-wrap">Monday - Friday: <span class="ml-1 md:ml-2">09:00 - 17:00 AM</span></p>
           </div>
@@ -29,15 +27,15 @@ import email from "../img/email.svg";
         <div
           class="social-media font-semibold flex flex-wrap gap-4"
           >
-          <a href="#linkedin" target="_blank">
-            <Image src={linkedin} alt="linkedin" loading="eager"></Image>
+          <a title="Linkedin profile" href="https://www.linkedin.com/" target="_blank">
+            <Image src={linkedin} alt="Linkedin profile" loading="eager"/>
           </a>
 
-          <a href="https://www.instagram.com/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15" role="img" aria-label="title"><title>[instagram]</title><path fill="none" stroke="#d1d2d6" d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z"></path></svg>
+          <a title="Instagram profile" href="https://www.instagram.com/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15" role="img" aria-label="Instagram"><title>Instagram</title><path fill="none" stroke="#d1d2d6" d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z"></path></svg>
             </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14" role="img" aria-label="title"><title>[facebook]</title><path fill="none" stroke="#d1d2d6" stroke-linecap="round" stroke-linejoin="round" d="M.5 12.5v-11a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-3V8.76h.71a.61.61 0 0 0 .61-.61v-.77a.611.611 0 0 0-.61-.61h-.67v-.94c0-.84.38-.84.76-.84h.49a.55.55 0 0 0 .43-.18a.58.58 0 0 0 .18-.43v-.74a.618.618 0 0 0-.6-.64H9.65a2.32 2.32 0 0 0-2.39 2.6v1.17h-.64a.61.61 0 0 0-.62.61v.77a.61.61 0 0 0 .62.61h.64v4.74H1.5a1 1 0 0 1-1-1"></path></svg>
+            <a title="Facebook profile" href="https://www.facebook.com/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14" role="img" aria-label="Facebook"><title>Facebook</title><path fill="none" stroke="#d1d2d6" stroke-linecap="round" stroke-linejoin="round" d="M.5 12.5v-11a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-3V8.76h.71a.61.61 0 0 0 .61-.61v-.77a.611.611 0 0 0-.61-.61h-.67v-.94c0-.84.38-.84.76-.84h.49a.55.55 0 0 0 .43-.18a.58.58 0 0 0 .18-.43v-.74a.618.618 0 0 0-.6-.64H9.65a2.32 2.32 0 0 0-2.39 2.6v1.17h-.64a.61.61 0 0 0-.62.61v.77a.61.61 0 0 0 .62.61h.64v4.74H1.5a1 1 0 0 1-1-1"></path></svg>
             </a>
         </div>
         <hr class="line-comm" />
@@ -47,17 +45,17 @@ import email from "../img/email.svg";
         <div class="list-contact">
           <ul>
             <li>
-                <Image src={phone} alt="phone" loading="eager"></Image>
-              <a href="tel:0755054654" target="_blank">0755054654</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 256 256" role="img" aria-label="Phone number"><title>Phone number</title><path fill="#ffffff" d="m221.59 160.3l-47.24-21.17a14 14 0 0 0-13.28 1.22a5 5 0 0 0-.56.42l-24.69 21a1.88 1.88 0 0 1-1.68.06c-15.87-7.66-32.31-24-40-39.65a1.91 1.91 0 0 1 0-1.68l21.07-25a6 6 0 0 0 .42-.58a14 14 0 0 0 1.12-13.27L95.73 34.49a14 14 0 0 0-14.56-8.38A54.24 54.24 0 0 0 34 80c0 78.3 63.7 142 142 142a54.25 54.25 0 0 0 53.89-47.17a14 14 0 0 0-8.3-14.53M176 210c-71.68 0-130-58.32-130-130a42.23 42.23 0 0 1 36.67-42h.23a2 2 0 0 1 1.84 1.31l21.1 47.11a2 2 0 0 1 0 1.67l-21.11 25.06a5 5 0 0 0-.43.57a14 14 0 0 0-.91 13.73c8.87 18.16 27.17 36.32 45.53 45.19a14 14 0 0 0 13.77-1c.19-.13.38-.27.56-.42l24.68-21a1.92 1.92 0 0 1 1.6-.1l47.25 21.17a2 2 0 0 1 1.21 2A42.24 42.24 0 0 1 176 210"></path></svg>
+              <a title="Phone number" href="tel:0755054654" target="_blank">0755054654</a>
             </li>
             <li>
-              <Image src={email} alt="email"
-              loading="eager"></Image>
-              <a href="mailto: #email">office@webdevagency.com</a>
+              <Image src={email} alt="Email agency"
+              loading="lazy"/>
+              <a title="Email agency" href="mailto:office@webdevagency.com">office@webdevagency.com</a>
             </li>
             <li>
-                <Image src={location} alt="location" loading="eager"></Image>
-              <a href="https://maps.app.goo.gl/L9D1quGgsfuWWkxS8" target="_blank">Bucharest, Piața Unirii, Nr 1 </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 2)" role="img" aria-label="Location"><title>Location</title><path d="m6.5 16.54l.631-.711Q8.205 14.6 9.064 13.49l.473-.624Q12.5 8.875 12.5 6.533C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033q0 2.342 2.963 6.334l.473.624a55 55 0 0 0 2.564 3.05"></path><circle cx="6.5" cy="6.5" r="2.5"></circle></g></svg>
+              <a title="Location agency" href="https://maps.app.goo.gl/L9D1quGgsfuWWkxS8" target="_blank">Bucharest, Piața Unirii, Nr 1 </a>
             </li>
 
           </ul>

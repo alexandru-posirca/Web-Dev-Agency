@@ -20,4 +20,4 @@ document.addEventListener("click", (e) => {
    if((windowPath === navLinkPath) || (windowPath.startsWith(navLinkPath) && navLinkPath !== "/" )) {
     link.classList.add('active');
    }
-  })
+  });

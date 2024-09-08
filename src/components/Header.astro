@@ -1,20 +1,19 @@
 ---
-import { Image } from "astro:assets";
-import location from "../img/location.svg";
-import phone from "../img/phone.svg";
 import Nav from "../components/Nav.astro";
 ---
 
-<header class="fixed z-[1000] w-screen bg-gray-500" id="header">
-    <div class="flex justify-center items-center md:py-2 ">
+<header class="fixed z-[1000] w-screen bg-gray-500" id="header" role="navigation">
+    <div class="flex justify-center items-center md:py-2" role="toolbar">
     <div class="size-full flex justify-between items-center relative py-3 md:py-0 content">
         <div class="nav-content brand flex items-center justify-between w-full md:block md:w-auto">
-            <a href="https://web-dev-agency.pages.dev/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 2048 2048" role="img" aria-label="title"><title>[logo-brand]</title><path fill="#f9a602" d="M1223 768h660L603 2048H313l384-768H248L888 0h719zM549 1920L1573 896h-557l384-768H967L455 1152h449l-384 768z"></path></svg></a>
+            <a title="Logo agency" href="https://web-dev-agency.pages.dev/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 2048 2048" role="img" aria-label="Menu"><path fill="#f9a602" d="M1223 768h660L603 2048H313l384-768H248L888 0h719zM549 1920L1573 896h-557l384-768H967L455 1152h449l-384 768z"><title>Logo</title></path></svg></a>
             <div id="menu-icon">
                 <svg class="hamburger-icon nav-icon opacity-80 md:hidden" id="hamburger" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 50 50" fill="white">
+                    <title>Hamburger</title>
                     <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"></path>
                     </svg>
                     <svg class="close-icon hidden nav-icon opacity-60 md:!hidden" id="close" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48" fill="white">
+                        <title>Close</title>
                         <path d="M 39.486328 6.9785156 A 1.50015 1.50015 0 0 0 38.439453 7.4394531 L 24 21.878906 L 9.5605469 7.4394531 A 1.50015 1.50015 0 0 0 8.484375 6.984375 A 1.50015 1.50015 0 0 0 7.4394531 9.5605469 L 21.878906 24 L 7.4394531 38.439453 A 1.50015 1.50015 0 1 0 9.5605469 40.560547 L 24 26.121094 L 38.439453 40.560547 A 1.50015 1.50015 0 1 0 40.560547 38.439453 L 26.121094 24 L 40.560547 9.5605469 A 1.50015 1.50015 0 0 0 39.486328 6.9785156 z"></path>
                         </svg>
             </div>
@@ -27,12 +26,12 @@ import Nav from "../components/Nav.astro";
                 <div class="flex gap-1">
                     <ul class="flex gap-5">
                         <li>
-                            <Image src={location} alt="location" width="28" loading="eager"></Image>
-                            <a href="https://maps.app.goo.gl/L9D1quGgsfuWWkxS8" target="_blank"> Bucharest, Piața Unirii, Nr 1</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 2)" role="img" aria-label="Location"><title>Location</title><path d="m6.5 16.54l.631-.711Q8.205 14.6 9.064 13.49l.473-.624Q12.5 8.875 12.5 6.533C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033q0 2.342 2.963 6.334l.473.624a55 55 0 0 0 2.564 3.05"></path><circle cx="6.5" cy="6.5" r="2.5"></circle></g></svg>
+                            <a title="Location agency" href="https://maps.app.goo.gl/L9D1quGgsfuWWkxS8" target="_blank"> Bucharest, Piața Unirii, Nr 1</a>
                         </li>
                         <li>
-                            <Image src={phone} alt="phone" width="28" loading="eager"></Image>
-                          <a href="tel:0755054654" target="_blank">+4075505465</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 256 256" role="img" aria-label="Phone number"><title>Phone number</title><path fill="#ffffff" d="m221.59 160.3l-47.24-21.17a14 14 0 0 0-13.28 1.22a5 5 0 0 0-.56.42l-24.69 21a1.88 1.88 0 0 1-1.68.06c-15.87-7.66-32.31-24-40-39.65a1.91 1.91 0 0 1 0-1.68l21.07-25a6 6 0 0 0 .42-.58a14 14 0 0 0 1.12-13.27L95.73 34.49a14 14 0 0 0-14.56-8.38A54.24 54.24 0 0 0 34 80c0 78.3 63.7 142 142 142a54.25 54.25 0 0 0 53.89-47.17a14 14 0 0 0-8.3-14.53M176 210c-71.68 0-130-58.32-130-130a42.23 42.23 0 0 1 36.67-42h.23a2 2 0 0 1 1.84 1.31l21.1 47.11a2 2 0 0 1 0 1.67l-21.11 25.06a5 5 0 0 0-.43.57a14 14 0 0 0-.91 13.73c8.87 18.16 27.17 36.32 45.53 45.19a14 14 0 0 0 13.77-1c.19-.13.38-.27.56-.42l24.68-21a1.92 1.92 0 0 1 1.6-.1l47.25 21.17a2 2 0 0 1 1.21 2A42.24 42.24 0 0 1 176 210"></path></svg>
+                          <a title="Phone number agency" href="tel:0755054654" target="_blank">+4075505465</a>
                         </li>
                     </ul>
                 </div>
